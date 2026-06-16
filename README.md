@@ -1,21 +1,24 @@
-# Bank Management System 🏦
+# Bank Management System & Currency Exchange 🏦💱
 
-After learning OOP in C++ I built this full banking system to practice 
-everything I've learned — classes, inheritance, encapsulation, file 
-handling, and design patterns. Quite challenging but very proud of it!
+After learning OOP in C++ I built this full banking and currency exchange 
+system to practice everything I've learned — classes, inheritance, 
+encapsulation, file handling, and design patterns. Quite challenging but 
+very proud of it!
 
 ## Features
 - 🔐 Login system with encrypted passwords
 - 👥 Client management (Add, Delete, Update, Find, List)
-- 💰 Transactions (Deposit, Withdraw, Transfer)
+- 💰 Transactions (Deposit, Withdraw, Transfer with logging)
 - 👤 User management with role-based permissions
 - 📋 Audit logs (Login register & Transfer log)
+- 💱 Currency Exchange (List, Find, Update rates, Calculator)
 
 ## How to Run
 1. Clone the repository
 2. Open in Visual Studio
 3. Build and run
 4. Login using credentials from `Users.txt`
+5. Add currencies to `currencies.txt`
 
 ## Default Users
 | Username | Password  |
@@ -39,3 +42,4 @@ handling, and design patterns. Quite challenging but very proud of it!
 - Design patterns (Factory method)
 - Permission systems using bitmasks
 - Caesar cipher encryption
+- Currency conversion logic
