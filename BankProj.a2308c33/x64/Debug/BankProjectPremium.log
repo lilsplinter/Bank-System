@@ -1,0 +1,23 @@
+﻿  BankProjectPremium.cpp
+H:\11 - OOP as it Should Be (Applications)\BankProjectPremium\clsUtility.h(32,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  (compiling source file 'BankProjectPremium.cpp')
+  
+H:\11 - OOP as it Should Be (Applications)\BankProjectPremium\clsBankClient.h(287,22): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'BankProjectPremium.cpp')
+  
+H:\11 - OOP as it Should Be (Applications)\BankProjectPremium\clsBankClient.h(293,22): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'BankProjectPremium.cpp')
+  
+H:\11 - OOP as it Should Be (Applications)\BankProjectPremium\clsAddNewClientScreen.h(16,58): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'BankProjectPremium.cpp')
+  
+H:\11 - OOP as it Should Be (Applications)\BankProjectPremium\clsUpdateClientScreen.h(16,58): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'BankProjectPremium.cpp')
+  
+H:\11 - OOP as it Should Be (Applications)\BankProjectPremium\clsDepositScreen.h(16,26): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'BankProjectPremium.cpp')
+  
+H:\11 - OOP as it Should Be (Applications)\BankProjectPremium\clsWithdrawScreen.h(19,26): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'BankProjectPremium.cpp')
+  
+  BankProjectPremium.vcxproj -> H:\11 - OOP as it Should Be (Applications)\BankProjectPremium\x64\Debug\BankProjectPremium.exe
