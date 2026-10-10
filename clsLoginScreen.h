@@ -17,7 +17,6 @@ private:
             UserName = clsInputValidate::ReadString("Please Enter Your User Name: ");
             Password = clsInputValidate::ReadString("Please Enter Your Password: ");
             CurrentUser = clsUser::Find(UserName, Password);
-            cout << "Found: " << !CurrentUser.IsEmpty() << endl;
             if (CurrentUser.IsEmpty()) {
                 LoginAttempts++;
                 cout << "Invalid Username/Password, try again.\n";
