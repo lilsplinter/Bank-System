@@ -11,7 +11,7 @@ challenging, and I'm proud of it.
 ![Currency calculator](screenshots/currency-calculator.png)
 
 ## Features
-- 🔐 Login system with password obfuscation (Caesar cipher, see note below)
+- 🔐 Login system with password obfuscation (Caesar cipher, see Security Note)
 - 👥 Client management: add, delete, update, find, list
 - 💰 Transactions: deposit, withdraw, transfer (with logging)
 - 👤 User management with role-based permissions (bitmasks)
@@ -19,11 +19,18 @@ challenging, and I'm proud of it.
 - 💱 Currency exchange: list, find, update rates, calculator
 
 ## How to Run
-Requires Windows and Visual Studio.
+Requires Windows and Visual Studio 2022 with the
+**Desktop development with C++** workload (this includes the Windows SDK).
+
 1. Clone the repository.
 2. Open `BankProjectPremium.vcxproj` in Visual Studio.
 3. Build and run (Ctrl+F5).
 4. Log in with one of the demo accounts below.
+
+**Important:** the `.txt` data files (`Users.txt`, `Clients.txt`,
+`Currencies.txt`, `LoginRegister.txt`, `TransferLog.txt`) must be in the
+folder the program runs from. With Ctrl+F5 this is the project folder.
+If you run the `.exe` from another folder, copy the files next to it.
 
 ## Demo Accounts
 These are test accounts only, not real credentials.
@@ -39,13 +46,14 @@ These are test accounts only, not real credentials.
 
 ## Security Note
 Passwords are stored with a Caesar cipher to practise encryption logic.
-This is **not secure**. A real system would use salted password hashing
-(for example bcrypt or Argon2). I'm aware of this limitation and plan to
-learn proper hashing.
+This is **not secure**: it only shifts letters, so it can be reversed in
+seconds. A real system would use salted password hashing (for example
+bcrypt or Argon2). I'm aware of this limitation and plan to learn proper
+hashing.
 
 ## Tech Stack
 - Language: C++
-- IDE: Visual Studio
+- IDE: Visual Studio 2022
 - Storage: text files (.txt)
 
 ## What I Learned
@@ -58,5 +66,7 @@ learn proper hashing.
 
 ## Possible Improvements
 - Replace the Caesar cipher with proper password hashing
+- Stop writing passwords to the login log
+- Hide the password while typing
 - Replace text files with a database (e.g. SQLite)
 - Add unit tests
