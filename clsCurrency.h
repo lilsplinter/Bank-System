@@ -19,7 +19,7 @@ private:
 	static clsCurrency _CreateEmptyCurrency() {
 		return clsCurrency(EmptyMode, "", "", "", 0);
 	}
-	static vector<string> _LoadCurrenciesDataFromFile(const string& filename = "currencies.txt") {
+	static vector<string> _LoadCurrenciesDataFromFile(const string& filename = "Currencies.txt") {
 		vector<string> vCurrenciesData;
 		fstream MyFile(filename, ios::in);
 		if (!MyFile.is_open()) {
@@ -79,7 +79,7 @@ private:
 	}
 	static void _Save(const vector<clsCurrency>& vCurrenciesData) {
 		vector<clsCurrency> _vAllCurrencies = _GetAllCurrencies();
-		fstream MyFile("currencies.txt", ios::out);
+		fstream MyFile("Currencies.txt", ios::out);
 		if (!MyFile.is_open()) {
 			cerr << "Error: Could not open file for writing." << endl;
 			return;
@@ -94,7 +94,7 @@ private:
 	}
 	static void _AddDataLineToFile(const string& line) {
 		fstream MyFile;
-		MyFile.open("currencies.txt", ios::app);
+		MyFile.open("Currencies.txt", ios::app);
 		if (MyFile.is_open()) {
 			MyFile << line << endl;
 		}
